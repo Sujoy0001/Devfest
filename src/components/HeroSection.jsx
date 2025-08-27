@@ -20,7 +20,7 @@ export default function HeroSection() {
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight text-black"
+              className="text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight text-black"
             />
 
             <BlurText
