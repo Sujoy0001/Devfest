@@ -24,10 +24,10 @@ export default function HeroSection() {
             />
 
             <BlurText
-              text="Ignite Your Development Journey by Google Developer Group. Join a global community of developers for a day of inspiration, learning, and connection. Dive deep into the latest technologies, experiment with cutting-edge tools, and network with like-minded peers."
-              delay={50}
+              text="Ignite Your Development Journey by Google Developer Group. Join a global community of developers for a day of inspiration, learning, and connection. Dive deep into the latest technologies, experiment with new tools, and network with peers who share your interests."
+              delay={30}
               animateBy="words"
-              direction="top"
+              direction="left"
               onAnimationComplete={handleAnimationComplete}
               className="text-zinc-900 mt-6 text-lg sm:text-md italic"
             />

@@ -13,7 +13,7 @@ export default function Home() {
       <ScrollVelocity
         texts={['DevFest Durgapur 2025 |', 'Coming Soon |']}
         velocity={100}
-        className="custom-scroll-text text-zinc-800 italic text-5xl md:text-7xl"
+        className="custom-scroll-text text-zinc-800 italic text-5xl md:text-7xl mt-4"
       />
       
       <div style={{ height: '500px', position: 'relative', overflow: 'hidden' }}>
