@@ -50,13 +50,12 @@ export default function HeroSection() {
             </div>
 
             {/* Register Button */}
-            <a
-              href="#"
+            <button
               className="inline-flex items-center px-8 py-4 mt-10 font-semibold text-white bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition transform duration-300 ease-in-out"
               role="button"
             >
               Coming Soon
-            </a>
+            </button>
           </div>
 
           {/* Right Image */}
