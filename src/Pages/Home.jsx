@@ -4,6 +4,8 @@ import HeroSection from "../components/HeroSection";
 import ScrollVelocity from '../animations/ScrollVelocity';
 import ImageTrail from '../animations/ImageTrail'
 import StayConnected from "../components/StayConnected";
+import DevFestHighlights from "../components/DevFestHighlights";
+import Faq from "../components/Faq";
 
 export default function Home() {
   return (
@@ -15,10 +17,12 @@ export default function Home() {
         velocity={100}
         className="custom-scroll-text text-zinc-800 italic text-5xl md:text-7xl mt-4"
       />
+
+      <DevFestHighlights />
       
-      <div style={{ height: '500px', position: 'relative', overflow: 'hidden' }}>
+      {/* <div style={{ height: '500px', position: 'relative', overflow: 'hidden' }}>
       {/* Centered text */}
-      <h2
+      {/* <h2
         style={{
           position: 'absolute',
           top: '50%',
@@ -33,7 +37,7 @@ export default function Home() {
       </h2>
 
       {/* Image trail */}
-      <ImageTrail
+      {/* <ImageTrail
         items={[
           'https://picsum.photos/id/287/300/300',
           'https://picsum.photos/id/1001/300/300',
@@ -46,9 +50,11 @@ export default function Home() {
         ]}
         variant={1}
       />
-    </div>
-    <StayConnected />
+    </div> */} 
 
+    <Faq />
+
+    <StayConnected />
     </>
   );
 }

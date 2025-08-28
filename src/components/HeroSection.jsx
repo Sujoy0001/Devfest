@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 import BlurText from "../animations/BlurText";
+import { motion } from "framer-motion";
 // import CircularText from '../animations/CircularText';
 
 export default function HeroSection() {
@@ -22,15 +23,19 @@ export default function HeroSection() {
               onAnimationComplete={handleAnimationComplete}
               className="text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight text-black"
             />
-
-            <BlurText
-              text="Ignite Your Development Journey by Google Developer Group. Join a global community of developers for a day of inspiration, learning, and connection. Dive deep into the latest technologies, experiment with new tools, and network with peers who share your interests."
-              delay={30}
-              animateBy="words"
-              direction="left"
+            
+            <motion.p
+              initial={{ opacity: 0, y: 40, scale: 0.95 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 1, ease: "easeOut" }}
               onAnimationComplete={handleAnimationComplete}
-              className="text-zinc-900 mt-6 text-lg sm:text-md italic"
-            />
+              className="text-zinc-900 mt-6 text-lg sm:text-md italic max-w-3xl mx-auto text-left"
+            >
+              Ignite Your Development Journey by Google Developer Group. Join a global
+              community of developers for a day of inspiration, learning, and
+              connection. Dive deep into the latest technologies, experiment with new
+              tools, and network with peers who share your interests.
+            </motion.p>
 
             {/* Date + Location */}
             <div className="flex flex-wrap items-center gap-6 mt-6 text-lg sm:text-xl text-zinc-950">
