@@ -7,27 +7,27 @@ import icon2 from "../assets/icons/Asset 13-rxbb.png"
 const Faq = () => {
   const [faq, setFaq] = useState([
     {
-      question: "How to create an account?",
+      question: "What is DevFest?",
       answer:
-        'Amet minim mollit non deserunt ullamco est sit <a href="#" title="" class="text-blue-600 transition-all duration-200 hover:underline">aliqua dolor</a> do amet sint. Velit officia consequat duis enim velit mollit.',
+        'DevFest is Google Developers’ annual community-led event series, bringing together developers, tech enthusiasts, and innovators to learn, share, and build together.',
       open: false,
     },
     {
-      question: "How can I make payment using Paypal?",
+      question: "Who can Participate in DevFest?",
       answer:
-        'Amet minim mollit non deserunt ullamco est sit <a href="#" title="" class="text-blue-600 transition-all duration-200 hover:underline">aliqua dolor</a> do amet sint. Velit officia consequat duis enim velit mollit.',
+        'Anyone passionate about technology-students, professionals, entrepreneurs, designers, and developers-can join DevFest.',
       open: false,
     },
     {
-      question: "Can I cancel my plan?",
+      question: "How to Register in DevFest?",
       answer:
-        'Amet minim mollit non deserunt ullamco est sit <a href="#" title="" class="text-blue-600 transition-all duration-200 hover:underline">aliqua dolor</a> do amet sint. Velit officia consequat duis enim velit mollit.',
+        'You can register through the official GDG/DevFest website or your local GDG chapter’s event page. Slots often fill fast, so grab yours early!',
       open: false,
     },
     {
-      question: "How can I reach to support?",
+      question: "Why should we attend DevFest?",
       answer:
-        'Amet minim mollit non deserunt ullamco est sit <a href="#" title="" class="text-blue-600 transition-all duration-200 hover:underline">aliqua dolor</a> do amet sint. Velit officia consequat duis enim velit mollit.',
+        'DevFest offers hands-on workshops, expert talks, networking opportunities, hackathons, and a chance to explore the latest in tech-all while being part of a global developer community.',
       open: false,
     },
   ]);
@@ -60,10 +60,6 @@ const Faq = () => {
           >
             Frequently Asked Questions
           </ScrollFloat><img src={icon2} alt="icon" className="h-10 md:h-12 mt-12 w-auto" /></div>
-
-          <p className="max-w-xl mx-auto mt-0 text-base leading-relaxed text-gray-600">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-          </p>
         </div>
 
         <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-8">
@@ -130,6 +126,13 @@ const Faq = () => {
             </motion.div>
           ))}
         </div>
+      
+      <div className="mx-w-3xl flex text-center">
+        <p className="text-gray-700 mx-auto text-base md:text-lg leading-relaxed mt-6">
+          <span className="font-semibold">Note:</span> ✨ DevFest isn’t just about cool swags-it’s about cool devs!  
+          <br />
+          So, enjoy the goodies, but dive into the sessions, learn, grow, and who knows… maybe unlock even more surprises! 🚀
+        </p></div>
       </div>
     </section>
   );

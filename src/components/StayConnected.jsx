@@ -6,7 +6,7 @@ import icon3 from "../assets/icons/Asset 4-rxbb.png"
 
 export default function StayConnected() {
   return (
-    <section className="p-8 m-4 relative flex flex-col md:flex-row items-center justify-between gap-6">
+    <section className="p-8 m-0 relative flex flex-col md:flex-row items-center justify-between gap-6">
       {/* Text Section */}
       <motion.div
         className="flex-1"

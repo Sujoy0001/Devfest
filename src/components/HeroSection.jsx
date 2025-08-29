@@ -6,8 +6,7 @@ import { motion } from "framer-motion";
 import bgimg from "../assets/images/gdgdurgapur.png";
 import icon1 from "../assets/icons/Asset 17-rxbb.png"
 import icon2 from "../assets/icons/Asset 10-rxbb.png"
-import icon3 from "../assets/icons/Asset 12-rxbb.png"
-import icon4 from "../assets/icons/Asset 13-rxbb.png"
+import icon3 from "../assets/icons/Asset 2propHS.png"
 
 export default function HeroSection() {
   const handleAnimationComplete = () => {
@@ -32,21 +31,17 @@ export default function HeroSection() {
               <img src={icon3} alt="icon" className="h-8 md:h-14 w-auto mb-6" />
               DevFest <img src={icon2} alt="icon" className="h-10 md:h-14 w-auto" /><br />
               <span className="text-yellow-500">Durgapur <br /></span>
-              2025 <img src={icon4} alt="icon" className="h-8 md:h-14 w-auto mb-6" />
+              2025 <img src={icon3} alt="icon" className="h-8 md:h-14 w-auto mb-6 rotate-180" />
             </h1>
             
-            <motion.p
-              initial={{ opacity: 0, y: 40, scale: 0.95 }}
-              animate={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              onAnimationComplete={handleAnimationComplete}
-              className="text-zinc-900 mt-0 text-lg sm:text-md italic max-w-3xl mx-auto text-left"
+            <p
+              className="text-zinc-900 mt-2 md:mt-2 text-lg font-semibold sm:text-md italic max-w-3xl mx-auto text-left"
             >
               Ignite Your Development Journey by Google Developer Group. Join a global
               community of developers for a day of inspiration, learning, and
               connection. Dive deep into the latest technologies, experiment with new
               tools, and network with peers who share your interests.
-            </motion.p>
+            </p>
 
             {/* Date + Location */}
             <div className="flex flex-wrap items-center gap-6 mt-6 text-lg sm:text-xl text-zinc-950">

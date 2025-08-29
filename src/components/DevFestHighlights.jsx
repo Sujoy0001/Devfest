@@ -2,6 +2,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import ImageTrail from "../animations/ImageTrail";
 import bgimg from "../assets/images/DSC00207.jpg";
+import img1 from "../assets/images/AK_08859.JPG";
+import img3 from "../assets/images/AK_08863.JPG";
+import img2 from "../assets/images/AK_08867.JPG";
+import img4 from "../assets/images/AK_08868.JPG";
+import img5 from "../assets/images/AK_08879.JPG";
+import img6 from "../assets/images/AK_08880.JPG";
+import img7 from "../assets/images/AK_08893.JPG";
+import img8 from "../assets/images/AK_08894.JPG";
 
 export default function DevFestHighlights() {
   return (
@@ -33,14 +41,7 @@ export default function DevFestHighlights() {
       {/* Image trail */}
       <ImageTrail
         items={[
-          "https://picsum.photos/id/287/300/300",
-          "https://picsum.photos/id/1001/300/300",
-          "https://picsum.photos/id/1025/300/300",
-          "https://picsum.photos/id/1026/300/300",
-          "https://picsum.photos/id/1027/300/300",
-          "https://picsum.photos/id/1028/300/300",
-          "https://picsum.photos/id/1029/300/300",
-          "https://picsum.photos/id/1030/300/300",
+          img1, img2, img3, img4, img5, img6, img7, img8
         ]}
         variant={1}
       />
