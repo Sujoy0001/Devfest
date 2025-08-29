@@ -2,7 +2,6 @@ import React from "react";
 import { FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 import BlurText from "../animations/BlurText";
 import { motion } from "framer-motion";
-// import CircularText from '../animations/CircularText';
 import bgimg from "../assets/images/gdgdurgapur.png";
 import icon1 from "../assets/icons/Asset 17-rxbb.png"
 import icon2 from "../assets/icons/Asset 10-rxbb.png"
@@ -19,14 +18,6 @@ export default function HeroSection() {
         <div className="grid justify-between grid-cols-1 gap-12 lg:grid-cols-2">
           {/* Left Content */}
           <div>
-            {/* <BlurText
-              text="DevFest Durgapur 2025"
-              delay={150}
-              animateBy="words"
-              direction="top"
-              onAnimationComplete={handleAnimationComplete}
-              className="text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight text-black"
-            /> */}
             <h1 className="flex items-center flex-wrap gap-2 text-5xl md:text-6xl lg:text-7xl font-extrabold italic tracking-wide text-black">
               <img src={icon3} alt="icon" className="h-8 md:h-14 w-auto mb-6" />
               DevFest <img src={icon2} alt="icon" className="h-10 md:h-14 w-auto" /><br />
