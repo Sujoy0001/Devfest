@@ -6,6 +6,7 @@ import ImageTrail from '../animations/ImageTrail'
 import StayConnected from "../components/StayConnected";
 import DevFestHighlights from "../components/DevFestHighlights";
 import Faq from "../components/Faq";
+import icon1 from "../assets/icons/Asset 17-rxbb.png"
 
 export default function Home() {
   return (
@@ -13,9 +14,9 @@ export default function Home() {
       <HeroSection />
       
       <ScrollVelocity
-        texts={['DevFest Durgapur 2025 |', 'Coming Soon |']}
-        velocity={100}
-        className="custom-scroll-text text-zinc-800 italic text-5xl md:text-7xl mt-4"
+        texts={['DevFest Durgapur 2025 /', 'Coming Soon /']}
+        velocity={70}
+        className="custom-scroll-text md:mt-1 text-zinc-800 italic text-5xl md:text-7xl h-20"
       />
 
       <DevFestHighlights />

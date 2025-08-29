@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import ScrollFloat from "../animations/ScrollFloat";
+import icon1 from "../assets/icons/Asset 12-rxbb.png"
+import icon2 from "../assets/icons/Asset 13-rxbb.png"
 
 const Faq = () => {
   const [faq, setFaq] = useState([
@@ -46,18 +48,20 @@ const Faq = () => {
   return (
     <section className="py-4 sm:py-16 lg:py-8 overflow-x-hidden">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-        <div className="max-w-2xl mx-auto text-center">
-          <ScrollFloat
-            animationDuration={3}
-            ease="back.inOut(3)"
-            scrollStart="center bottom+=50%"
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="flex items-center justify-center gap-3 w-full">
+            <img src={icon1} alt="icon" className="h-10 md:h-12 mb-8 w-auto" />
+            <ScrollFloat
+              animationDuration={3}
+              ease="back.inOut(3)"
+              scrollStart="center bottom+=50%"
             scrollEnd="bottom bottom-=40%"
             stagger={0.03}
           >
             Frequently Asked Questions
-          </ScrollFloat>
+          </ScrollFloat><img src={icon2} alt="icon" className="h-10 md:h-12 mt-12 w-auto" /></div>
 
-          <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">
+          <p className="max-w-xl mx-auto mt-0 text-base leading-relaxed text-gray-600">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do
           </p>
         </div>

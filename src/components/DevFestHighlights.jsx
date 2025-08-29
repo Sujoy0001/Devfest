@@ -5,7 +5,7 @@ import bgimg from "../assets/images/DSC00207.jpg";
 
 export default function DevFestHighlights() {
   return (
-    <div className="relative h-[500px] overflow-hidden rounded-none xl:rounded-2xl mt-8">
+    <div className="relative h-[500px] overflow-hidden rounded-none xl:rounded-2xl md:mt-8">
       {/* Background image with motion */}
       <motion.div
         className="absolute inset-0 bg-cover bg-center xl:rounded-3xl opacity-80"

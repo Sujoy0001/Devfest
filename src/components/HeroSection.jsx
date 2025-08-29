@@ -3,6 +3,11 @@ import { FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 import BlurText from "../animations/BlurText";
 import { motion } from "framer-motion";
 // import CircularText from '../animations/CircularText';
+import bgimg from "../assets/images/gdgdurgapur.png";
+import icon1 from "../assets/icons/Asset 17-rxbb.png"
+import icon2 from "../assets/icons/Asset 10-rxbb.png"
+import icon3 from "../assets/icons/Asset 12-rxbb.png"
+import icon4 from "../assets/icons/Asset 13-rxbb.png"
 
 export default function HeroSection() {
   const handleAnimationComplete = () => {
@@ -12,24 +17,30 @@ export default function HeroSection() {
   return (
     <section className="relative bg-white bg-opacity-50 py-6 md:py-8 lg:py-16">
       <div className="px-6 mx-auto max-w-7xl lg:px-8">
-        <div className="grid items-center grid-cols-1 gap-12 lg:grid-cols-2">
+        <div className="grid justify-between grid-cols-1 gap-12 lg:grid-cols-2">
           {/* Left Content */}
           <div>
-            <BlurText
+            {/* <BlurText
               text="DevFest Durgapur 2025"
               delay={150}
               animateBy="words"
               direction="top"
               onAnimationComplete={handleAnimationComplete}
               className="text-5xl lg:text-6xl xl:text-7xl font-extrabold leading-tight text-black"
-            />
+            /> */}
+            <h1 className="flex items-center flex-wrap gap-2 text-5xl md:text-6xl lg:text-7xl font-extrabold italic tracking-wide text-black">
+              <img src={icon3} alt="icon" className="h-8 md:h-14 w-auto mb-6" />
+              DevFest <img src={icon2} alt="icon" className="h-10 md:h-14 w-auto" /><br />
+              <span className="text-yellow-500">Durgapur <br /></span>
+              2025 <img src={icon4} alt="icon" className="h-8 md:h-14 w-auto mb-6" />
+            </h1>
             
             <motion.p
               initial={{ opacity: 0, y: 40, scale: 0.95 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
               transition={{ duration: 1, ease: "easeOut" }}
               onAnimationComplete={handleAnimationComplete}
-              className="text-zinc-900 mt-6 text-lg sm:text-md italic max-w-3xl mx-auto text-left"
+              className="text-zinc-900 mt-0 text-lg sm:text-md italic max-w-3xl mx-auto text-left"
             >
               Ignite Your Development Journey by Google Developer Group. Join a global
               community of developers for a day of inspiration, learning, and
@@ -50,12 +61,14 @@ export default function HeroSection() {
             </div>
 
             {/* Register Button */}
+            <div className="flex gap-20 items-center">
             <button
               className="inline-flex items-center px-8 py-4 mt-10 font-semibold text-white bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full shadow-lg hover:scale-105 hover:shadow-xl transition transform duration-300 ease-in-out"
               role="button"
             >
-              Coming Soon
+            Coming Soon
             </button>
+            <img src={icon1} alt="icon" className="h-14 w-auto mt-6 rotate-12" /></div>
           </div>
 
           {/* Right Image */}
@@ -63,7 +76,7 @@ export default function HeroSection() {
             <div className="absolute -inset-2 bg-gradient-to-tr from-yellow-200 via-pink-200 to-purple-200 rounded-3xl blur-2xl opacity-50"></div>
             <img
               className="relative w-full max-w-lg drop-shadow-2xl"
-              src="https://cdn.rareblocks.xyz/collection/celebration/images/hero/1/hero-img.png"
+              src={bgimg}
               alt="Hero illustration"
             />
           </div>

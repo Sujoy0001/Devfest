@@ -1,12 +1,9 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { h1 } from "framer-motion/client";
+import React from 'react'
 
 const Footer = () => {
-
   return (
-    <h1 className="text-3xl font-bold text-center">Footer Section</h1>
-  );
-};
+    <div>Footer</div>
+  )
+}
 
-export default Footer;
+export default Footer
