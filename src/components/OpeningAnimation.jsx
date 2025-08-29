@@ -33,7 +33,7 @@ export default function OpeningAnimation({ onFinish }) {
       // last step -> trigger fadeOut first
       const finishTimer = setTimeout(() => {
         setFadeOut(true);
-        setTimeout(() => onFinish(), 1000); // wait for fade animation
+        setTimeout(() => onFinish(), 1200); // wait for fade animation
       }, 1500);
       return () => clearTimeout(finishTimer);
     }
@@ -145,13 +145,8 @@ export default function OpeningAnimation({ onFinish }) {
           boxShadow: "0 0 60px 30px rgba(59,130,246,0.6), 0 0 120px 60px rgba(59,130,246,0.3)",
           filter: "blur(6px)", // smoother edge
         }}
-  />
-)}
-
-
-
-
-
+        />
+      )}
     </div>
   );
 }
