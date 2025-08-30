@@ -10,6 +10,10 @@ import img5 from "../assets/images/AK_08879.JPG";
 import img6 from "../assets/images/AK_08880.JPG";
 import img7 from "../assets/images/AK_08893.JPG";
 import img8 from "../assets/images/AK_08894.JPG";
+import img9 from "../assets/images/DSC_0332.png";
+import img10 from "../assets/images/DSC_0333.png";
+import img11 from "../assets/images/IMG_3199.png";
+import img12 from "../assets/images/IMG_3212.png";
 
 export default function DevFestHighlights() {
   return (
@@ -41,7 +45,7 @@ export default function DevFestHighlights() {
       {/* Image trail */}
       <ImageTrail
         items={[
-          img1, img2, img3, img4, img5, img6, img7, img8
+          img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12
         ]}
         variant={1}
       />
